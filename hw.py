@@ -1,3 +1,4 @@
+import db
 
 
 # ---------------- MAIN APP LOOP ---------------- #
@@ -16,13 +17,13 @@ def main():
         choice = input("Choose an option (1-5): ")
 
         if choice == "1":
-            add_user()
+            db.add_user()
         elif choice == "2":
-            show_all_users()
+            db.show_all_users()
         elif choice == "3":
-            update_user()
+            db.update_user()
         elif choice == "4":
-            delete_user()
+            db.delete_user()
         elif choice == "5":
             print("👋 Exiting program. Goodbye!")
             break
