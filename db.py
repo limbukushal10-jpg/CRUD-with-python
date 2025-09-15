@@ -39,8 +39,8 @@ def show_all_users():
     if rows:
         print("ID | Name | Email | Age")
         print("=" * 40)
-         for i, row in enumerate(rows, start=1):
-            print(f"{row[i]} | {row[1]} | {row[2]} | {row[3]}")
+        for row in rows:
+            print(f"{row[0]} | {row[1]} | {row[2]} | {row[3]}")
     else:
         print("No users found.")
 
